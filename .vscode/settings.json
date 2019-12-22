@@ -1,0 +1,23 @@
+{
+  "editor.wordWrap": "wordWrapColumn",
+  "cSpell.words": [
+    "browserslist",
+    "clsx",
+    "commitlint",
+    "esnext",
+    "Interop",
+    "precommit"
+  ],
+  "cSpell.ignorePaths": [
+    "**/yarn.lock",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/.git/objects/**",
+    ".vscode"
+  ],
+  "cSpell.ignoreRegExpList": [
+    "\"id\": \"[0-9a-zA-Z]+\"",
+    "id: '[0-9a-zA-Z]+'",
+    "Id: '[0-9a-zA-Z]+'"
+  ]
+}

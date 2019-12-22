@@ -1,0 +1,37 @@
+{
+  "npmClient": "yarn",
+  "version": "independent",
+  "useWorkspaces": true,
+  "ignoreChanges": [
+    "**/__mocks__/**",
+    "**/__tests__/**",
+    "**/*.md"
+  ],
+  "command": {
+    "init": {
+      "independent": true,
+      "exact": true
+    },
+    "create": {
+      "yes": false,
+      "esModule": true
+    },
+    "add": {
+      "exact": true
+    },
+    "clean": {
+      "yes": true
+    },
+    "exec": {
+      "concurrency": 1
+    },
+    "version": {
+      "allowBranch": "master"
+    },
+    "publish": {
+      "allowBranch": "master",
+      "exact": true,
+      "message": "chore(release): publish"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@scope/utils",
+  "version": "0.0.0",
+  "description": "utilities",
+  "keywords": [
+    "utilities",
+    "encrypt",
+    "random"
+  ],
+  "author": "crossjs <liwenfu@crossjs.com>",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crossjs/monorepo.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "build": "rm -rf lib && tsc"
+  },
+  "devDependencies": {
+    "@scope/types": "*",
+    "typescript": "^3.7.3"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "name": "monorepo",
+  "version": "0.0.1",
+  "description": "mono-repo template built with lerna, typescript, babel, prettier, eslint, jest, husky, lint-staged, commitizen, etc.",
+  "keywords": [
+    "template",
+    "monorepo",
+    "lerna",
+    "typescript",
+    "babel",
+    "prettier",
+    "eslint",
+    "jest",
+    "husky",
+    "lint-staged",
+    "commitizen"
+  ],
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "tsc": "lerna run tsc --no-private",
+    "build": "lerna run build --no-private",
+    "dev": "jest --no-cache --watchAll --updateSnapshot",
+    "commit": "git-cz",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix ./",
+    "test": "jest --no-cache"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.7",
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@types/jest": "^24.0.24",
+    "@typescript-eslint/eslint-plugin": "^2.12.0",
+    "@typescript-eslint/parser": "^2.12.0",
+    "babel-plugin-root-import": "^6.4.1",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.0.2",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "git-message": "^2.0.2",
+    "husky": "^3.1.0",
+    "jest": "^24.9.0",
+    "lerna": "^3.19.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn lint && yarn test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

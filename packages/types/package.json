@@ -1,0 +1,15 @@
+{
+  "name": "@scope/types",
+  "version": "0.0.0",
+  "description": "types",
+  "keywords": [
+    "types"
+  ],
+  "author": "crossjs <liwenfu@crossjs.com>",
+  "main": "",
+  "types": "index",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crossjs/monorepo.git"
+  }
+}

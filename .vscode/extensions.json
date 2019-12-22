@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag", // Auto Close Tag
+    "formulahendry.auto-rename-tag", // Auto Rename Tag
+    "formulahendry.code-runner", // Code Runner
+    "streetsidesoftware.code-spell-checker", // Code Spell Checker
+    "msjsdiag.debugger-for-chrome", // Debugger for Chrome
+    "editorconfig.editorconfig", // EditorConfig for VS Code
+    "vector-of-bool.gitflow", // Git Flow
+    "donjayamanne.githistory", // Git History
+    "eamodio.gitlens", // GitLens — Git supercharged
+    "abusaidm.html-snippets", // HTML Snippets
+    "shd101wyy.markdown-preview-enhanced", // Markdown Preview Enhanced
+    "christian-kohler.npm-intellisense", // christian-kohler.npm-intellisense
+    "christian-kohler.path-intellisense", // Path Intellisense
+    "esbenp.prettier-vscode", // Prettier - Code formatter
+    "jasonnutter.search-node-modules", // Search node_modules
+    "tabnine.tabnine-vscode", // TabNine
+    "gruntfuggly.todo-tree", // Todo Tree
+    "sidmishraw.topper", // A fileheader utility
+    "qinjia.view-in-browser", // View In Browser
+    "dbaeumer.vscode-eslint", // ESLint
+    "orta.vscode-jest", // Jest
+    "eg2.vscode-npm-script" // npm
+  ]
+}
